@@ -1,0 +1,178 @@
+
+@font-face {
+    font-family: DigitalPixels;
+    src:url("../fonts/DigitalPixels.OTF");
+}
+@font-face {
+    font-family: minecraft;
+    src:url("../fonts/minecraft_0.ttf");
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image:url("../image/bg.png ");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family:'DigitalPixels';
+    color:rgb(255, 255, 255);
+}
+.playngField{
+    margin: auto;
+    width:60%;
+    height: 55%;
+    background: linear-gradient(0deg, #b20004, #c1a949 );
+    border-radius: 61px;
+    padding: 40px;
+    display: flex; 
+}
+.playngField div{
+   text-align: center;
+}
+.play {
+    height: 100%;
+    width: 30%;
+}
+.play > div {
+    border: 2px solid #00acb2;
+    background: linear-gradient(0deg, #c14949, #00acb2);
+    margin: auto;
+    margin-bottom: 30px;
+}
+.name{
+    width: 250px;
+    height: 50px;
+    border-radius: 20px;
+}
+.number{
+    width: 250px;
+    height:250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stat{
+    width: 250px;
+    height:81px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#result{
+    width: 40%;
+    text-align: center;
+}
+#result > div{
+    border: 2px solid #00acb2;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+#bet{
+    height: 50px;
+    width: 250px;
+    background: linear-gradient(0deg, #2c2c2c, #676767);
+    border: 2px solid #00acb2;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#startBtn{
+    height: 250px;
+    width: 250px;
+    background: linear-gradient(0deg, #2c2c2c, #676767);
+    cursor: pointer;
+    margin: auto;
+    color: #dadada;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+#balance{
+    height: 81px;
+    width: 250px;
+    background: linear-gradient(0deg, #2c2c2c, #676767);
+    font-size: 24px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-family: "minecraft";
+    font-size: 10px;
+}
+@media (max-width: 1050px) {
+    .playngField{
+        width: 90%;
+    }
+}
+@media (max-width: 800px) {
+    body {
+        height: 100vh;
+        
+    }
+
+    .playngField {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        height: 90vh;
+        padding: 10px;
+        border-radius: 30px;
+    }
+
+    .play {
+        width: 100%;
+        height: 33%;
+        margin-bottom: 10px;
+    }
+    .play div{
+        width: 70%; 
+        height: 20%;
+        margin-bottom: 15px;
+    }
+    .number{
+        border-radius: 10px;
+    }
+    #startBtn{
+        height: 20%;
+    }
+   
+}
+
+
+@media (max-width: 480px) {
+    .number {
+        width: 120px;
+        height: 120px;
+        font-size: 18px;
+    }
+
+    #startBtn {
+        height: 80px;
+        font-size: 18px;
+    }
+
+    .name, .stat, #bet, #balance {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .playngField {
+        height: 95vh;
+        padding: 5px;
+    }
+    #result  {
+        width: 100%;
+    }
+}
